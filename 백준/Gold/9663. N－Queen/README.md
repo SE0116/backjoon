@@ -22,9 +22,11 @@
 
 ### 입력 
 
- <p>첫째 줄에 N이 주어진다. (1 ≤ N < 15)</p>
+ [[백준] 9663번 N-Queen - 파이썬(Python)](https://seongonion.tistory.com/103)
 
 ### 출력 
 
  <p>첫째 줄에 퀸 N개를 서로 공격할 수 없게 놓는 경우의 수를 출력한다.</p>
 
+### 참고
+ <p>https://seongonion.tistory.com/103</p>
