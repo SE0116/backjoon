@@ -5,7 +5,7 @@ input_count = int(input())
 
 word_list = [input().strip() for _ in range(input_count)]
 
-word_set = list(sorted(set(word_list)))
+word_set = list((set(word_list)))
 word_cnt = [len(word_set[i]) for i in range(len(word_set))]
 cnt_list = [0] * (max(word_cnt)+1)
 
