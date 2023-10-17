@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 def binary_search(lst, num):
   left, right = 0, len(lst)-1
 
