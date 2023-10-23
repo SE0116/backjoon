@@ -1,6 +1,6 @@
 import sys, heapq
-
 input = sys.stdin.readline
+INF = 1e9
 
 N, M, K, X = map(int, input().split())
 
@@ -11,7 +11,7 @@ for i in range(M):
   node_list[u].append(v)
 
 node_dist = []
-distance = [1e9] * (N+1)
+distance = [INF] * (N+1)
 
 
 def dijkstra(start):
