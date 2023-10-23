@@ -1,6 +1,5 @@
 import sys, heapq
 input = sys.stdin.readline
-INF = 1e9
 
 N, M, K, X = map(int, input().split())
 
@@ -11,7 +10,7 @@ for i in range(M):
   node_list[u].append(v)
 
 node_dist = []
-distance = [INF] * (N+1)
+distance = [1e9] * (N+1)
 
 
 def dijkstra(start):
@@ -31,10 +30,9 @@ def dijkstra(start):
   
     # 다음 노드로 갈 수 있고, 최단거리가 더 짧은값으로 나오면 갱신
     for i in node_list[now]:
-      cost = dist + 1
-      if cost < distance[i]:
-        distance[i] = cost
-        heapq.heappush(queue, (cost, i))
+      if dist +1 < distance[i]:
+        distance[i] = dist + 1
+        heapq.heappush(queue, (dist+1, i))
       
 
 dijkstra(X)
