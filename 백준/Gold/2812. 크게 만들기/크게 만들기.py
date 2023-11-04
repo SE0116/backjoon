@@ -24,7 +24,7 @@ for i in range(N):
 # 주어진 숫자가 내림차순이면 pop이 안되고 K값이 떨어지지 않기 때문에
 # 반복문이 끝나고 K값이 1 이상이면 슬라이싱을 사용하거나 K를 뺀 인덱스로 출력
 # 아래 두 가지 중 하나 사용
-for i in range(len(result)-K):
-  print(result[i], end='')
+# for i in range(len(result)-K):
+#   print(result[i], end='')
 
-# print(''.join(map(str, result[:N-K])))
+print(''.join(map(str, result[:len(result)-K])))
